@@ -7,6 +7,8 @@ A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTM
 
 NLog configured to output logs to 'c:\logfile.txt'
 
+Each feature group below has it's own controller and folder that contain the implementations.
+
 ---
 
 ###Techs
