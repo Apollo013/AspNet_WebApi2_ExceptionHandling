@@ -7,12 +7,12 @@ A Web Api 2 / OWIN app built using VS2015 Community
 
 ---
 
-###HttpResponseException Features
+###Http Response Features
 |Feature|Comment|
 |-------|-------|
 |IHttpActionResult| Demonstrates a few examples of builtin .NET shortcut methods for returning a response {OK, BadRequest, etc}|
 |IHttpActionResult| Demonstrates how to create a custom response that derives from 'IHttpActionResult'|
-|Request.CreateResponse| Demonstrates how to use a method of the current contexts 'HttpRequestMessage' object(Request) to generate a 'HttpResponseMessage'. Could also have user 'CreateErrorResponse' |
+|Request.CreateResponse| Demonstrates how to use a method of the current contexts 'HttpRequestMessage' object(Request) to generate a 'HttpResponseMessage'. Could also have used 'CreateErrorResponse' |
 |HttpResponseException| Demonstrates how to create a 'HttpResponseMessage' object and throw that response in a 'HttpResponseException'|
 
 ---
