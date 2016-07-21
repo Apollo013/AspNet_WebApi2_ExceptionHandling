@@ -114,7 +114,9 @@
     <Compile Include="Controllers\HttpResponseExceptionsController.cs" />
     <Compile Include="ExceptionFilter\ItemNotFoundException.cs" />
     <Compile Include="ExceptionFilter\ItemNotFoundExceptionFilterAttribute.cs" />
-    <Compile Include="ExceptionHandler\ArgumentNullResult.cs" />
+    <Compile Include="ExceptionHandlers\HttpInternalServerResult.cs" />
+    <Compile Include="ExceptionHandlers\HttpNotAuthorizedResult.cs" />
+    <Compile Include="ExceptionHandlers\GlobalExceptionHandler.cs" />
     <Compile Include="HttpResponseExceptions\HttpCreatedResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />

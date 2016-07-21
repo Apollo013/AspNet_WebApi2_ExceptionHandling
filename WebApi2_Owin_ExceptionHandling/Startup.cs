@@ -5,6 +5,8 @@ using Owin;
 using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
+using WebApi2_Owin_ExceptionHandling.ExceptionHandlers;
 
 [assembly: OwinStartup(typeof(WebApi2_Owin_ExceptionHandling.Startup))]
 
@@ -19,6 +21,9 @@ namespace WebApi2_Owin_ExceptionHandling
             ConfigureRouting(config);
 
             ConfigureJsonMessageFormat(config);
+
+            // Register Global Exception Handler
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
 
             app.UseWebApi(config);
         }
