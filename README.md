@@ -3,7 +3,7 @@ A run through on various exception handling, logging and http response implement
 
 ---
 
-A Web Api 2 / OWIN app built using VS2015 Community
+A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTMAN.
 
 ---
 
@@ -15,18 +15,37 @@ A Web Api 2 / OWIN app built using VS2015 Community
 |IHttpActionResult| Demonstrates a few examples of builtin .NET shortcut methods for returning a response {OK, BadRequest, etc}|
 |IHttpActionResult| Demonstrates how to create a custom 201 (Created) response that derives from 'IHttpActionResult'|
 |Request.CreateResponse| Demonstrates how to use a method of the current contexts 'HttpRequestMessage' object(Request) to generate a 'HttpResponseMessage'. Could also have used 'CreateErrorResponse' |
-|HttpResponseException| Demonstrates how to create a 400 (BadRequest) 'HttpResponseMessage' and throw that in a 'HttpResponseException'|
+|HttpResponseMessage| Demonstrates how to create a 400 (BadRequest) 'HttpResponseMessage' |
+|HttpResponseException| Used to throw the above 'HttpResponseMessage' |
 
 
 ###Tests
 |Verb|Uri|Response|
 |----|---|--------|
-|POST|http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/customcreatedresponse/John|201 (Created)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/ok |200 (OK) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/notfound |404 (NotFound)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/nocontent |204 (NoContent)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{4} |200 (OK)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{101} |400 (BadRequest)|
+|POST|http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/customcreatedresponse/John|201 (Created)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/ok |200 (OK) |
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/notfound |404 (NotFound)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/nocontent |204 (NoContent)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/checkid/{4} |200 (OK)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/checkid/{101} |400 (BadRequest)|
+
+---
+
+##Exception Filter
+
+###Features
+|Feature|Comment|
+|-------|-------|
+|ExceptionFilterAttribute| Demonstrates how to create a custom Exception Filter Attribute that is applied at the action level|
+|Exception| Demonstrates how to create a custom exception class that derives from 'Exception' |
+|HttpResponseMessage| Demonstrates how to create a 404 (NotFound) 'HttpResponseMessage' |
+|HttpResponseException| Used to throw the above 'HttpResponseMessage' |
+
+
+###Tests
+|Verb|Uri|Response|
+|----|---|--------|
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionfilter/{id:int}|404 (NotFound) |
 
 ---
 
