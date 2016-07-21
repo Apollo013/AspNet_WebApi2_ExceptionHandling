@@ -111,13 +111,14 @@
     <Compile Include="Controllers\ExceptionFilterController.cs" />
     <Compile Include="Controllers\ExceptionHandlerController.cs" />
     <Compile Include="Controllers\ExceptionLoggerController.cs" />
-    <Compile Include="Controllers\HttpResponseExceptionController.cs" />
+    <Compile Include="Controllers\HttpResponseExceptionsController.cs" />
+    <Compile Include="ExceptionFilter\ItemNotFoundException.cs" />
+    <Compile Include="ExceptionFilter\ItemNotFoundExceptionFilterAttribute.cs" />
     <Compile Include="HttpResponseExceptions\CustomHttpCreatedResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExceptionFilter\" />
     <Folder Include="ExceptionHandler\" />
     <Folder Include="ExceptionLogger\" />
   </ItemGroup>

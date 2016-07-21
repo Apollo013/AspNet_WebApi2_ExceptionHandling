@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
+using WebApi2_Owin_ExceptionHandling.ExceptionFilter;
 
 namespace WebApi2_Owin_ExceptionHandling.Controllers
 {
-    public class ExceptionFilterController : ApiController
+    [RoutePrefix("exceptionfiltercontroller")]
+    public class ExceptionFilterController : BaseController
     {
+        [ItemNotFoundExceptionFilter]
+        [Route("{id:int}")]
+        [HttpGet]
+        public IHttpActionResult Get(int id)
+        {
+            throw ItemNotFound($"Cannot find item : {id}");
+        }
     }
 }
