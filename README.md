@@ -12,7 +12,7 @@ A Web Api 2 / OWIN app built using VS2015 Community
 |-------|-------|
 |IHttpActionResult| Demonstrates a few examples of builtin .NET shortcut methods for returning a response {OK, BadRequest, etc}|
 |IHttpActionResult| Demonstrates how to create a custom response that derives from 'IHttpActionResult'|
-|Request.CreateResponse| Demonstrates how to use 'HttpRequestMessage' method to generate a 'HttpResponseMessage' |
+|Request.CreateResponse| Demonstrates how to use a method of the current contexts 'HttpRequestMessage' object(Request) to generate a 'HttpResponseMessage'. Could also have user 'CreateErrorResponse' |
 |HttpResponseException| Demonstrates how to create a 'HttpResponseMessage' object and throw that response in a 'HttpResponseException'|
 
 ---
