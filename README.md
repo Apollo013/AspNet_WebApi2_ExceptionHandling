@@ -7,6 +7,15 @@ A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTM
 
 ---
 
+###Techs
+|Tech|
+|----|
+|WebApi2|
+|OWIN|
+|NLog|
+
+---
+
 ##Http Responses
 
 ###Features
