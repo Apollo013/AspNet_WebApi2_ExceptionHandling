@@ -3,7 +3,7 @@ A run through on various exception handling, logging and http response implement
 
 ---
 
-A Web Api 2 / OWIN app built using VS2015 Community
+A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTMAN.
 
 ---
 
