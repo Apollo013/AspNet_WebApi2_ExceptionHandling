@@ -19,14 +19,14 @@ A Web Api 2 / OWIN app built using VS2015 Community
 
 
 ###Tests
-|Verb|Uri|Result|
-|----|---|------|
-|POST|http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/customcreatedresponse/John| 201 (Created) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/ok | 200 (OK) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/notfound | 404 (NotFound) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/nocontent | 204 (NoContent) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{4} | 200 (OK) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{101} | 400 (BadRequest)|
+|Verb|Uri|Response|
+|----|---|--------|
+|POST|http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/customcreatedresponse/John|201 (Created)|
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/ok |200 (OK) |
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/notfound |404 (NotFound)|
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/nocontent |204 (NoContent)|
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{4} |200 (OK)|
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{101} |400 (BadRequest)|
 
 ---
 
