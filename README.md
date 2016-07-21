@@ -45,7 +45,7 @@ A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTM
 ###Tests
 |Verb|Uri|Response|
 |----|---|--------|
-|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionfiltercontroller/{id:int}|404 (NotFound) |
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionfilter/{id:int}|404 (NotFound) |
 
 ---
 
