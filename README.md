@@ -7,13 +7,26 @@ A Web Api 2 / OWIN app built using VS2015 Community
 
 ---
 
-###Http Response Features
+##Http Responses
+
+####Features
 |Feature|Comment|
 |-------|-------|
 |IHttpActionResult| Demonstrates a few examples of builtin .NET shortcut methods for returning a response {OK, BadRequest, etc}|
 |IHttpActionResult| Demonstrates how to create a custom 201 (Created) response that derives from 'IHttpActionResult'|
 |Request.CreateResponse| Demonstrates how to use a method of the current contexts 'HttpRequestMessage' object(Request) to generate a 'HttpResponseMessage'. Could also have used 'CreateErrorResponse' |
 |HttpResponseException| Demonstrates how to create a 400 (BadRequest) 'HttpResponseMessage' and throw that in a 'HttpResponseException'|
+
+
+####Tests
+|Verb|Uri|Result|
+|----|---|------|
+|POST|http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/customcreatedresponse/John| 201 (Created) |
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/ok | 200 (OK) |
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/notfound | 404 (NotFound) |
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/nocontent | 204 (NoContent) |
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{4} | 200 (OK) |
+|GET| http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/checkid/{101} | 400 (BadRequest)|
 
 ---
 
