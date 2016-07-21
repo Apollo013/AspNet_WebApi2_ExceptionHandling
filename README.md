@@ -58,19 +58,34 @@ A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTM
 
 ---
 
-##Exception Handler
+##Global Exception Handler
 
 ###Features
 |Feature|Comment|
 |-------|-------|
-|ExceptionHandler| Demonstrates how to create a custom global exception handler thats registered with the config |
+|ExceptionHandler| Demonstrates how to create a custom global exception handler that's registered globally with the config |
 |IHttpActionResult| 2 classes that derive from 'IHttpActionResult', one that creates a 'HttpResponseMessage' for UnauthorizedAccess, and one thats used for any other exception (throws InternalServerError) |
 
 
 ###Tests
 |Verb|Uri|Response|
 |----|---|--------|
-|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionhandler/| 401 or 500 depending on which line in the controller is uncommented |
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionhandler| 401 or 500 depending on which line in the controller is uncommented |
+
+---
+
+##Global Exception Logger
+
+###Features
+|Feature|Comment|
+|-------|-------|
+|ExceptionLogger| Demonstrates how to create a custom global exception logger with NLog that's registered globally with the config |
+
+
+###Tests
+|Verb|Uri|Response|
+|----|---|--------|
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionlogger| 401 or 500 depending on which line in the controller is uncommented |
 
 ---
 
