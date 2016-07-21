@@ -22,12 +22,12 @@ A Web Api 2 / OWIN app built using VS2015 Community
 ###Tests
 |Verb|Uri|Response|
 |----|---|--------|
-|POST|http://localhost:[YOU_PORT_NUMBER]/httpresponseexceptions/customcreatedresponse/John|201 (Created)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/httpresponseexceptions/ok |200 (OK) |
-|GET| http://localhost:[YOU_PORT_NUMBER]/httpresponseexceptions/notfound |404 (NotFound)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/httpresponseexceptions/nocontent |204 (NoContent)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/httpresponseexceptions/checkid/{4} |200 (OK)|
-|GET| http://localhost:[YOU_PORT_NUMBER]/httpresponseexceptions/checkid/{101} |400 (BadRequest)|
+|POST|http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/customcreatedresponse/John|201 (Created)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/ok |200 (OK) |
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/notfound |404 (NotFound)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/nocontent |204 (NoContent)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/checkid/{4} |200 (OK)|
+|GET| http://localhost:[YOUR_PORT_NUMBER]/httpresponseexceptions/checkid/{101} |400 (BadRequest)|
 
 ---
 
@@ -45,7 +45,7 @@ A Web Api 2 / OWIN app built using VS2015 Community
 ###Tests
 |Verb|Uri|Response|
 |----|---|--------|
-|GET|http://localhost:[YOU_PORT_NUMBER]/exceptionfiltercontroller/{id:int}|404 (NotFound) |
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionfiltercontroller/{id:int}|404 (NotFound) |
 
 ---
 
