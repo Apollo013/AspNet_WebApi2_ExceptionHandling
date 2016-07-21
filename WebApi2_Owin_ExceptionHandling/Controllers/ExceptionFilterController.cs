@@ -3,7 +3,7 @@ using WebApi2_Owin_ExceptionHandling.ExceptionFilter;
 
 namespace WebApi2_Owin_ExceptionHandling.Controllers
 {
-    [RoutePrefix("exceptionfiltercontroller")]
+    [RoutePrefix("exceptionfilter")]
     public class ExceptionFilterController : BaseController
     {
         [ItemNotFoundExceptionFilter]
