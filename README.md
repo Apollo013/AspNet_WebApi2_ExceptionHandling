@@ -45,7 +45,23 @@ A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTM
 ###Tests
 |Verb|Uri|Response|
 |----|---|--------|
-|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionfilter/{id:int}|404 (NotFound) |
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionfilter | 404 (NotFound) |
+
+---
+
+##Exception Handler
+
+###Features
+|Feature|Comment|
+|-------|-------|
+|ExceptionHandler| Demonstrates how to create a custom global exception handler thats registered with the config |
+|IHttpActionResult| 2 classes that derive from 'IHttpActionResult', one that creates a 'HttpResponseMessage' for UnauthorizedAccess, and one thats used for any other exception (throws InternalServerError) |
+
+
+###Tests
+|Verb|Uri|Response|
+|----|---|--------|
+|GET|http://localhost:[YOUR_PORT_NUMBER]/exceptionhandler/| 401 or 500 depending on which line in the controller is uncommented |
 
 ---
 
