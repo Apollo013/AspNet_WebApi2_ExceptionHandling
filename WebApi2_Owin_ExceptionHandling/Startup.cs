@@ -7,6 +7,7 @@ using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.ExceptionHandling;
 using WebApi2_Owin_ExceptionHandling.ExceptionHandlers;
+using WebApi2_Owin_ExceptionHandling.ExceptionLoggers;
 
 [assembly: OwinStartup(typeof(WebApi2_Owin_ExceptionHandling.Startup))]
 
@@ -24,6 +25,9 @@ namespace WebApi2_Owin_ExceptionHandling
 
             // Register Global Exception Handler
             config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
+
+            // Register Global Exception Logger
+            config.Services.Add(typeof(IExceptionLogger), new GlobalExceptionLogger());
 
             app.UseWebApi(config);
         }
