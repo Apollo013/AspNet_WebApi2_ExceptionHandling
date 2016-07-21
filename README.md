@@ -55,7 +55,7 @@ A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTM
 |Feature|Comment|
 |-------|-------|
 |ExceptionHandler| Demonstrates how to create a custom global exception handler thats registered with the config |
-|IHttpActionResult| 2 classes that derive from 'IHttpActionResult', one that creates a 'HttpResponseMessage' for UnauthorizedAccess, and one thats used for any unhandled exceptions (throws InternalServerError) |
+|IHttpActionResult| 2 classes that derive from 'IHttpActionResult', one that creates a 'HttpResponseMessage' for UnauthorizedAccess, and one thats used for any other exception (throws InternalServerError) |
 
 
 ###Tests
