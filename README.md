@@ -5,7 +5,7 @@ A run through on various exception handling, logging and http response implement
 
 A Web Api 2 / OWIN app built using VS2015 Community. Test using Fiddler or POSTMAN.
 
-NLog configured to output log file under 'c:\logfile.txt'
+NLog configured to output logs to 'c:\logfile.txt'
 
 ---
 
