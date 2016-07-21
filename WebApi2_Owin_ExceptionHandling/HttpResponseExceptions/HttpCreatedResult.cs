@@ -6,12 +6,12 @@ using System.Web.Http;
 
 namespace WebApi2_Owin_ExceptionHandling.HttpResponseExceptions
 {
-    public class CustomHttpCreatedResponse : IHttpActionResult
+    public class HttpCreatedResult : IHttpActionResult
     {
         private HttpRequestMessage _request;
         private string _message;
 
-        public CustomHttpCreatedResponse(HttpRequestMessage request, string message)
+        public HttpCreatedResult(HttpRequestMessage request, string message)
         {
             _request = request;
             _message = message;

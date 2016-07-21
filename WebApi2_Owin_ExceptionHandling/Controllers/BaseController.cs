@@ -8,9 +8,9 @@ namespace WebApi2_Owin_ExceptionHandling.Controllers
     public class BaseController : ApiController
     {
 
-        protected CustomHttpCreatedResponse Created(HttpRequestMessage request, string message)
+        protected HttpCreatedResult Created(HttpRequestMessage request, string message)
         {
-            return new CustomHttpCreatedResponse(request, message);
+            return new HttpCreatedResult(request, message);
         }
 
         protected ItemNotFoundException ItemNotFound(string message)
