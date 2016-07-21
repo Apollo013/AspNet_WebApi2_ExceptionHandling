@@ -9,7 +9,7 @@ A Web Api 2 / OWIN app built using VS2015 Community
 
 ##Http Responses
 
-####Features
+###Features
 |Feature|Comment|
 |-------|-------|
 |IHttpActionResult| Demonstrates a few examples of builtin .NET shortcut methods for returning a response {OK, BadRequest, etc}|
@@ -18,7 +18,7 @@ A Web Api 2 / OWIN app built using VS2015 Community
 |HttpResponseException| Demonstrates how to create a 400 (BadRequest) 'HttpResponseMessage' and throw that in a 'HttpResponseException'|
 
 
-####Tests
+###Tests
 |Verb|Uri|Result|
 |----|---|------|
 |POST|http://localhost:[YOU_PORT_NUMBER]/api/httpresponseexceptions/customcreatedresponse/John| 201 (Created) |
