@@ -1,4 +1,4 @@
-# WebApi2_Owin_ExceptionHandling
+# AspNet_WebApi2_ExceptionHandling
 A run through on various exception handling, logging and http response implementations in a Web Api 2 app.
 
 ---
